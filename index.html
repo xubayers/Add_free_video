@@ -4,8 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <title>Watch video without add || YTV Add free</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-red-300 py-2">Hello world!</h1>
+  <body class="text-white bg-zinc-900 justify-center flex">
+    <header
+      class="md:p-4 md:w-8/12 w-11/12 flex flex-col items-center bg-zinc-800 h-screen"
+    >
+      <div
+        class="md:w-[600px] md:h-[355px] h-[250px] md:p-4 w-full border md:border-gray-500 border-gray-600 flex justify-center items-center"
+      >
+        <iframe
+          id="vidio"
+          class="w-full h-full"
+          title="YTVADDFREEVIDEO"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="mt-5 md:w-[600px]">
+        <p class="text-gray-200">Paste video URL and start watching</p>
+        <div class="relative">
+          <input
+            type="search"
+            class="mt-2 px-4 py-2 w-full bg-transparent border border-gray-500 outline-none"
+            id="url"
+          />
+          <p
+            id="warning-msg"
+            class="text-xs h-0 text-red-400 overflow-hidden"
+          ></p>
+          <button
+            class="absolute right-0 h-[42px] bottom-0 bg-blue-500 md:px-8 px-4"
+            id="search"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <p class="mt-20 text-blue-600 underline cursor-pointer">Contact me</p>
+    </header>
+
+    <!-- js here -->
+    <script src="./main.js"></script>
   </body>
 </html>
